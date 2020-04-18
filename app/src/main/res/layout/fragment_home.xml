@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_home"
+    android:background="@drawable/bg_home">
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Serene"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <SearchView
+        android:id="@+id/search_box"
+        android:layout_below="@+id/tv_appname"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search_box"
+        android:queryHint="Search something .."
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:theme="@style/appSearchView"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/tv_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_box"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Categories"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="31dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categories"
+        android:layout_below="@id/tv_categories"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_viewpager"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/tv_recommended"
+        android:layout_below="@+id/rv_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Recommended"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="see all"
+            android:textSize="12dp"
+            android:gravity="end"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_article"
+        android:layout_below="@id/tv_recommended"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_recom"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg_login">
+
+    <Button
+        android:id="@+id/btn_back_login"
+        android:layout_width="48dp"
+        android:layout_height="37dp"
+        android:background="@drawable/button_yellow"
+        android:layout_margin="24dp"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="22dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="165dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_desc_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to start building yourself !"
+        android:textSize="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tv_signIn"
+        android:layout_marginTop="8dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:fontFamily="@font/montserrat"
+        android:textSize="14sp"
+        android:layout_below="@id/tv_desc_login"
+        android:layout_marginTop="61dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="58dp"/>
+
+    <EditText
+        android:id="@+id/et_username_login"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_username_login"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/field_login_register"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="14sp"
+        android:hint="username"
+        android:fontFamily="@font/montserrat"
+        android:textSize="14sp"
+        android:paddingLeft="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_username_login"
+        android:layout_marginTop="19dp"
+        android:text="Password"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="58dp"/>
+
+    <EditText
+        android:id="@+id/et_password_login"
+        android:inputType="textPassword"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_password_login"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/field_login_register"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:paddingLeft="14sp"
+        android:drawablePadding="14sp"
+        android:hint="password"
+        android:fontFamily="@font/montserrat"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_signin_signin"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/et_password_login"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/button_yellow"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat"
+        android:textSize="12sp"/>
+
+
+
+
+
+
+</RelativeLayout>
